@@ -1,0 +1,761 @@
+/* FONT */
+
+@font-face {
+    font-family: "NostraStream";
+    src:url("font/Nostrav0.8-Stream.woff") format("woff");
+    src:url("font/Nostrav0.8-Stream.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mono";
+    src:url("font/SuisseIntlMono-Regular.woff") format("woff");
+    src:url("font/SuisseIntlMono-Regular.woff2") format("woff2");
+}
+
+/* BASE */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+article, aside, details, figcaption, figure,
+footer, header, main, menu, nav, section, summary {
+  /* Add correct display for IE 9- and some newer browsers */
+  display: block;
+}
+
+
+
+::-moz-selection {
+  background: rgb(96, 29, 143);
+  color: white;
+}
+
+::selection {
+  background: rgb(96, 29, 143);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(96, 29, 143);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  color: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(96, 29, 143);
+  bo
+}
+
+
+
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 601px) {
+
+body,html, .col1, .col2  {
+
+  height: auto;
+  font-size: 16px;
+}
+
+.col1, .col2 {
+  width: 50%;
+  display: flex;
+}
+
+.col1 {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:100vh;
+  color:rgb(96, 29, 143);
+  overflow: auto;
+}
+
+.col2 {
+  background-color: rgb(96, 29, 143);
+  margin-left: 50%;
+  overflow: auto;
+height:100vh;
+  color:white;
+}
+
+h4{
+  font-size: 12em;
+  font-family: 'NostraStream';
+  font-weight: normal;
+  letter-spacing: -0.15em;
+}
+
+}
+
+.highlight{
+  background: white ;
+  color: rgb(96, 29, 143);
+}
+
+.highlight:hover{
+
+  background: rgb(96, 29, 143) ;
+  color: white;
+}
+
+
+
+.highlight2:hover{
+  background: white ;
+  color: rgb(96, 29, 143);
+}
+
+.highlight2{
+  background: rgb(96, 29, 143) ;
+  color: white;
+}
+
+/* GRID & LAYOUT*/
+
+.maincontainer{
+  font-size: 1em;;
+  width:99vw;
+  height:auto;
+  vertical-align: top;
+}
+
+.gutter {
+  padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* Create four equal columns that floats next to each other */
+.headerbutton {
+  float: left;
+  width: 20%;
+  padding: 10px;
+ /* Should be removed. Only for demonstration */
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  background: rgb(96, 29, 143);
+  margin-left:2.5%;
+    margin-right:2.5%;
+  /* For browsers that do not support gradients */
+  /* background-image: linear-gradient(red, yellow); */
+  border-radius: 16px;
+  color:black;
+  margin-top: 5%
+
+}
+
+.headerbutton:hover {
+
+background-image: linear-gradient(red, yellow);
+
+}
+   /* 25px top, 10px right, 4px bottom and 35px left
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear:
+}
+
+.Subcolumn {
+  float: left;
+  width: 95%;
+  margin-left:5%;
+  margin-right:5%;
+  margin:top: 5%;
+}
+
+.title{
+  width: 95vw;
+  height:auto;
+  position: fixed;
+  top:25%;
+  /* Webkit */
+  -webkit-animation:spin 25s linear infinite;
+  -moz-animation:spin 25s linear infinite;
+  animation:spin 25s linear infinite;
+  transform-origin: 50% 50%;
+  /* Webkit */
+  text-align: center;
+}
+
+.column{
+  width 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  height: auto;
+}
+
+.filtered {
+   background:rgb(96, 29, 143);
+}
+
+.filtered img {
+  mix-blend-mode: screen;
+  -webkit-filter: grayscale(100%) contrast(200%);
+  filter: grayscale(100%) contrast(200%);
+  opacity: 1;
+}
+
+.filtered,
+.not-filtered {
+  float: left;
+  max-width: 50%;
+  border: 0px solid white;
+  margin:10px;
+ margin-right:12px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1{
+  font-size: 20em;
+  color: white;
+  text-shadow: -1px 15px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  font-family: "NostraStream";
+  letter-spacing: -0.1em;
+}
+
+
+p.date{
+  font-size: 0.7em;
+  font-family: 'Mono';'
+}
+
+p.update{
+  font-size: 1em;
+  font-family: 'Mono';'
+}
+
+p.media{
+  font-size: 1em;
+  font-family: 'Mono';'
+}
+
+
+h3{
+  font-size: 1.3em;
+  font-family: 'Mono';
+  font-weight: normal;
+  line-height: 1em;
+}
+
+
+
+.player {
+  margin-top: 90vh;
+  width:100vw;
+  position: fixed;
+  z-index: 2;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body,html, .col1, .col2  {
+    overflow-x: hidden;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .col1, .col2 {
+    width: 100vw;
+    display: inline-block;
+    }
+
+      .col1 {
+        display: inline-block;
+        background-color: white;
+        height:100%;
+        color:rgb(96, 29, 143);
+
+      }
+
+      .col2 {
+        display: inline-block;
+        background-color: rgb(96, 29, 143);
+        height:100%;
+        color:white;
+        margin-left: 0;
+        overflow:;
+      }
+
+      h4{
+        font-size: 9em;
+        font-family: 'NostraStream';
+        font-weight: normal;
+        letter-spacing: -0.15em;
+      }
+
+}
+
+
+/* AUDIOPLAYER */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.hide {
+  display: none !important;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+/*------------------------
+    Audio Player - AP
+------------------------*/
+/* Player and control panel */
+.ap {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  margin: auto;
+  font-family: 'Mono';
+  font-size: 1em;
+  user-select: none;
+  color: rgb(96, 29, 143) ;
+  background: white;
+  border-top: 1px solid rgb(96, 29, 143) ;;
+  z-index: 9999;
+}
+
+/* .ap:hover {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  margin: auto;
+  font-family: 'Mono';
+  font-size: 1em;
+  user-select: none;
+  color: white ;
+  background: rgb(96, 29, 143);
+  border-top: 1px solid white ;;
+  z-index: 9999;
+} */
+
+.ap-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.ap-panel {
+  display: flex;
+}
+.ap-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.ap--track {
+  flex: 1 40%;
+  padding: 0 20px;
+}
+
+/* Info section */
+.ap-info {
+  width: 100%;
+  position: relative;
+  align-self: flex-start;
+  padding: 5px 0 0;
+}
+.ap-title {
+  position: relative;
+  overflow: hidden;
+  padding-right: 80px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ap-time {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.ap-progress-container {
+  padding: 5px 0 10px;
+  cursor: pointer;
+}
+.ap-progress {
+  position: relative;
+  height: 3px;
+  border-radius: 5px;
+  background: rgba(96, 29, 143, 0.3);;
+}
+.ap-preload-bar,
+.ap-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-radius: 5px 0 0 5px;
+  background: rgba(96, 29, 143, 0.3);
+  z-index: 999;
+}
+.ap-bar {
+  background: rgb(96, 29, 143);;
+  z-index: 9999;
+}
+.ap-bar:after {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  content: '';
+  border-radius: 6px;
+  background: rgb(96, 29, 143);;
+
+
+}
+
+
+
+.ap-progress-container:hover .ap-bar:after {
+  opacity: 1;
+  background:  rgb(96, 29, 143);
+}
+
+/* Buttons */
+.ap-controls {
+  position: relative;
+  z-index: 1000;
+  display: block;
+  height: 50px;
+  cursor: pointer;
+  transition: background .2s ease;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  background: none;
+}
+.ap-controls svg {
+  fill: rgb(96, 29, 143);
+
+}
+
+.ap-controls:hover svg {
+  fill: rgb(96, 29, 143);
+
+}
+
+
+.ap-controls:active {
+  background: white;
+}
+.ap--playback > .ap-controls,
+.ap--settings > .ap-controls {
+  flex: 0 25%;
+}
+.ap--pause,
+.playing > .ap--play {
+  display: none;
+}
+.playing > .ap--pause {
+  display: inline;
+}
+.ap-volume-container {
+  z-index: 9999;
+}
+.ap-volume {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  transition: height .2s cubic-bezier(0.17, 0.72, 0.26, 1.23);
+  background: white;
+  border: 1px solid rgb(96, 29, 143);;
+  border-bottom: 0;
+  z-index: 9999;
+}
+.ap-volume-btn {
+  font-size: 1em;
+  color:rgb(96, 29, 143);
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 18px;
+  margin-right:30px;
+}
+
+.ap-repeat-btn{
+  font-size: 1em;
+  color:rgb(96, 29, 143);
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ap-playlist-btn{
+  font-size: 1em;
+  color:rgb(96, 29, 143);
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ap-prev-btn{
+  font-size: 1em;
+  color:rgb(96, 29, 143);
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ap-toggle-btn{
+  font-size: 1em;
+  color:rgb(96, 29, 143);
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ap-next-btn{
+  font-size: 1em;
+  color:rgb(96, 29, 143);
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ap-volume-btn > .ap--volume-off,
+.muted > .ap--volume-on {
+  display: none;
+}
+.muted > .ap--volume-off {
+  display: inline;
+}
+.ap-volume-container:hover {
+  background: white;
+}
+.ap-volume-container:hover .ap-volume {
+  height: 120px;
+  visibility: visible;
+}
+.ap-volume-progress {
+  display: block;
+  width: 4px;
+  height: 100px;
+  margin: 10px auto;
+  background: rgba(96, 29, 143, 0.3);
+  position: relative;
+  border-radius: 3px;
+}
+.ap-volume-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(96, 29, 143);;
+  height: 50%;
+  border-radius: 3px;
+}
+
+.ap-active {
+  background: white;
+  opacity: 1;
+}
+
+@keyframes blink {
+  from { opacity: 0; }
+  50% { opacity: 1; }
+  to { opacity: 0; }
+}
+.playing > .ap--pause {
+  animation: blink 1.5s linear infinite;
+}
+/* --------------------------- */
+
+@media(max-width:880px) {
+  .ap-item > .ap-controls {
+    flex: 1;
+  }
+}
+@media(max-width:550px) {
+  .ap {
+    min-width: 250px;
+  }
+  .ap, .ap-panel {
+    height: auto;
+  }
+  .ap-panel {
+    flex-wrap: wrap;
+  }
+  .ap--track {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    order: 1;
+    flex: 1 1 100%;
+  }
+  .ap--playback,
+  .ap--settings {
+    flex: 1 1 50%;
+    order: 2;
+  }
+}
+/*--------------------
+  PlayList
+--------------------*/
+.pl-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  font-family: 'Mono';
+  font-size: 1em;
+  background: white;
+  z-index: 999;
+}
+.pl-lead {
+  font-size: 1em;
+  text-align: center;
+  color: rgb(96, 29, 143);
+
+}
+.pl-list {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+.pl-list > li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #FFF;
+}
+.pl-number,
+.pl-title,
+.pl-remove {
+  margin: 0 5px;
+  padding: 10px 0;
+}
+.pl-number {
+  flex: 0 10%;
+  text-align: center;
+}
+.pl-playing {
+  display: none;
+}
+.pl-current .pl-count {
+  display: none;
+}
+.pl-current .pl-playing {
+  display: block;
+}
+.pl-current .pl-title {
+
+}
+
+.pl-title {
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  color:rgb(96, 29, 143);
+}
+.pl-title:hover {
+  text-decoration: underline;
+}
+.pl-remove {
+  opacity: 0;
+  margin-right: 0;
+  cursor: pointer;
+  text-align: center;
+  flex: 0 50px;
+}
+.pl-remove:hover {
+
+}
+.pl-list > li:hover .pl-remove {
+  opacity: 1;
+}
+
+.pl-list svg {
+  fill: rgba(0,0,0, .7);
+}
+
+.pl-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  color: rgb(96, 29, 143);
+}
+
+@keyframes eq {
+  0% { height: 3px; }
+  50% { height: 20px; }
+  100% { height: 3px; }
+}
+.eq {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.eq-bar {
+  width: 4px;
+  background: rgb(96, 29, 143);
+}
+.eq-bar:nth-child(1) {
+  animation: eq .8s ease-in-out infinite 0s;
+}
+.eq-bar:nth-child(2) {
+  animation: eq .8s ease-in-out infinite .2s;
+}
+.eq-bar:nth-child(3) {
+  animation: eq .8s ease-in-out infinite .4s;
+}
