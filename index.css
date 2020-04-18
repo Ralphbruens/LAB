@@ -101,13 +101,15 @@ body,html, .col1, .col2  {
 height:100vh;
   color:white;
 }
-
 h4{
-  font-size: 12em;
+
+  font-size: 16px;
+  font-size:14.3vw;
   font-family: 'NostraStream';
   font-weight: normal;
   letter-spacing: -0.15em;
 }
+
 
 }
 
@@ -238,7 +240,7 @@ img {
 }
 
 h1{
-  font-size: 20em;
+    font-size: 50%;
   color: white;
   text-shadow: -1px 15px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   font-family: "NostraStream";
@@ -268,6 +270,7 @@ h3{
   font-weight: normal;
   line-height: 1em;
 }
+
 
 
 
@@ -310,11 +313,15 @@ h3{
       }
 
       h4{
-        font-size: 6.4em;
+
+        font-size: 16px;
+        font-size:28.5vw;
         font-family: 'NostraStream';
         font-weight: normal;
         letter-spacing: -0.15em;
       }
+
+
 
 }
 
