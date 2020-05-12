@@ -79,6 +79,25 @@ body,html, .col1, .col2  {
   font-size: 16px;
 }
 
+.entercontainer{
+  position: fixed;
+  height:auto;
+  width: 100vw;
+  background: white;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  color:rgb(96, 29, 143);
+  z-index: 100;
+}
+
+.entercolumn{
+  position: fixed;
+  height:50%;
+  width: 60vw;
+  z-index: 100;
+}
+
+
 .col1, .col2 {
   width: 50%;
   display: flex;
@@ -268,7 +287,7 @@ h3{
   font-size: 1.3em;
   font-family: 'Mono';
   font-weight: normal;
-  line-height: 1em;
+  line-height: 1.3em;
 }
 
 
