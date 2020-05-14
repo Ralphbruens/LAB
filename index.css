@@ -12,6 +12,12 @@
     src:url("font/SuisseIntlMono-Regular.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "AuSans";
+    src:url("font/AUTHENTICSans-130.woff") format("woff");
+    src:url("font/AUTHENTICSans-130.woff2") format("woff2");
+}
+
 /* BASE */
 
 *,
@@ -61,22 +67,19 @@ footer, header, main, menu, nav, section, summary {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(96, 29, 143);
-  bo
+
 }
-
-
-
 
 img {
   width: 100%;
 }
 
-@media screen and (min-width: 601px) {
-
+@media screen and (min-width: 1121px) {
+/* DESKTOP */
 body,html, .col1, .col2  {
-
   height: auto;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .entercontainer{
@@ -85,49 +88,135 @@ body,html, .col1, .col2  {
   width: 100vw;
   background: white;
   border-style: solid;
-  border-width: 1px 1px 1px 1px;
+  border-width: 0px 0px 1px 0px;
   color:rgb(96, 29, 143);
   z-index: 100;
 }
 
-.entercolumn{
-  position: fixed;
-  height:50%;
-  width: 60vw;
-  z-index: 100;
+.logocontainer{
+  width:33vw;
+  height:auto;
+  color:white;
+  background-color: rgb(96, 29, 143);
+  display: inline-block;
+
+}
+
+.tabelcontainer{
+  height:auto;
+  color:rgb(96, 29, 143);
+  margin-left: 1%;
+  display: inline-block;
 }
 
 
 .col1, .col2 {
-  width: 50%;
-  display: flex;
+  width: 49.86%;
+  display: inline-block;
 }
 
 .col1 {
   background-color: white;
-  position: fixed;
   left: 0;
   top: 0;
   height:100vh;
   color:rgb(96, 29, 143);
   overflow: auto;
+  z-index: 89;
 }
 
 .col2 {
   background-color: rgb(96, 29, 143);
-  margin-left: 50%;
   overflow: auto;
-height:100vh;
+  height:100vh;
   color:white;
+  float: right;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: rgb(96, 29, 143);
 }
-h4{
 
-  font-size: 16px;
-  font-size:14.3vw;
-  font-family: 'NostraStream';
-  font-weight: normal;
-  letter-spacing: -0.15em;
+.headline{
+  margin-top: 7%;
+  width:100vw;
+  height:auto;
+
 }
+
+  .content{
+    margin: auto;
+    width:100vw;
+    height:auto;
+    margin-top: 8.5%;
+    font-size: 0;
+  }
+
+  .headlinecol1 {
+    width: 68%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    height:55vh;
+    color:rgb(96, 29, 143);
+    overflow: hidden;
+    z-index: 89;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(96, 29, 143);
+    display: inline-block;
+  }
+
+  .headlinecol2 {
+    font-size: 16px;
+    width: 31%;
+    top:0;
+    height:55vh;
+    overflow: auto;
+    color:rgb(96, 29, 143);
+    z-index: 89;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(96, 29, 143);
+    display: inline-block;
+  }
+
+  .headlinecolumn{
+    top:0;
+  }
+
+  h4{
+    font-size: 16px;
+    font-size:14.3vw;
+    font-family: 'NostraStream';
+    font-weight: normal;
+    letter-spacing: -0.15em;
+  }
+
+  h5{
+    font-size:9.8vw;
+    font-family: 'NostraStream';
+    font-weight: normal;
+    letter-spacing: -0.15em;
+    color:white;
+    margin-left: 1%;
+    margin-bottom: -3.7%;
+
+  }
+
+  p.table{
+    font-size: 1.0vw;
+    font-family: 'mono';
+    line-height: 1.3em;
+
+
+  }
+
+  p.menu{
+    font-size: 1.3vw;
+    font-family: 'mono';
+    line-height: 1.3em;
+    display: inline;
+  }
 
 
 }
@@ -291,6 +380,7 @@ h3{
 }
 
 
+}
 
 
 .player {
@@ -302,7 +392,8 @@ h3{
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1120px) {
+  /* MOBILE */
   body,html, .col1, .col2  {
     overflow-x: hidden;
     height: auto;
@@ -339,6 +430,115 @@ h3{
         font-weight: normal;
         letter-spacing: -0.15em;
       }
+
+      .entercontainer{
+        position: fixed;
+        height:auto;
+        width: 100vw;
+        background: white;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        color:rgb(96, 29, 143);
+        z-index: 100;
+      }
+
+      .logocontainer{
+        width:100vw;
+        height:auto;
+        color:white;
+        background-color: rgb(96, 29, 143);
+        display: inline-block;
+
+      }
+
+      .tabelcontainer{
+        height:auto;
+        color:rgb(96, 29, 143);
+        margin-left: 1%;
+        display: inline-block;
+      }
+
+      .headline{
+        margin-top: 7%;
+        width:100vw;
+        height:auto;
+
+      }
+
+        .content{
+          margin: auto;
+          width:100vw;
+          height:auto;
+          margin-top: 40%;
+          font-size: 0;
+        }
+
+        .headlinecol1 {
+          width: 100%;
+          background-color: white;
+          left: 0;
+          top: 0;
+          height:25vh;
+          color:rgb(96, 29, 143);
+          overflow: hidden;
+          z-index: 89;
+          border-style: solid;
+          border-width: 1px 1px 1px 1px;
+          border-color: rgb(96, 29, 143);
+          display: inline-block;
+        }
+
+        .headlinecol2 {
+          font-size: 16px;
+          width: 100%;
+          top:0;
+          height:25vh;
+          overflow: auto;
+          color:rgb(96, 29, 143);
+          z-index: 89;
+          border-style: solid;
+          border-width: 0px 0px 1px 0px;
+          border-color: rgb(96, 29, 143);
+          display: inline-block;
+        }
+
+        .headlinecolumn{
+          top:0;
+        }
+
+        h4{
+          font-size: 16px;
+          font-size:14.3vw;
+          font-family: 'NostraStream';
+          font-weight: normal;
+          letter-spacing: -0.15em;
+        }
+
+        h5{
+          font-size:29vw;
+          font-family: 'NostraStream';
+          font-weight: normal;
+          letter-spacing: -0.15em;
+          color:white;
+          margin-left: 1%;
+
+
+        }
+
+        p.table{
+          font-size: 15px;
+          font-family: 'mono';
+          line-height: 1.3em;
+
+
+        }
+
+        p.menu{
+          font-size: 20px;
+          font-family: 'mono';
+          line-height: 1.3em;
+          display: inline;
+        }
 
 
 
