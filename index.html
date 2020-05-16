@@ -20,16 +20,13 @@
     <p style="margin-top:1%; margin-left:1%;" class='update'>X</p>
   </div>
   <div class='column'>
-    <p style="margin-top:2%;" class='menu'>ABOUT</p>
+    <p style="margin-top:2%;" class='menu'>CONTEXT</p>
     <div class="filtered">
       <img src="img/RIMB_DESCR.jpg">
     </div>
     <p style="margin-top:2%;" class='update'>
-    This website is put together in the spirit of THE pirate bible: <a href='rimb.html'> Radio is my bomb</a>  This website, made in April 2020, its still a bit rough but I hope to update it regularily.
-    Its intended as a 'Do-It -Yourself' Pirate's Handbook, aimed at promoting neighbourhood, political and openaccess radio pirates. This version is updated with modern technologies and made to preserve the pirate radio ideas.
-    ... But obviously you can use it as you wish ... , you can play your favourite music, or you can set up local open-access stations.
-    nded as a 'Do-It -Yourself' Pirate's Handbook, aimed at promoting neighbourhood, political and openaccess radio pirates. This version is updated with modern technologies and made to preserve the pirate radio ideas.
-    ... But obviously you can use
+    A pirate radio how-to guide published by Hooligan Press in London in April, 1987. The title comes from a quote from Chantal Paternostre, a Belgian anarchist who said it when arrested on trumped up terrorism charges. She worked for Radio Air Libre, a Brussels pirate radio station. She was eventually released from prison after more than a year detained: most of it in solitary confinement.
+    This artifact is a collection of information about pirate radio which is very interesting as an artifact for transcoding. This publication was released because it became much more difficult to set up an pirate station. This publication contains story of successful and unsuccessful stations and how can we learn form this for future pirate radio
     </p>
 
   </div>
@@ -41,7 +38,7 @@
     </div>
     <div class='tabelcontainer'>
       <p class='table'>TABEL OF CONTENT</p>
-      <p class='menu aboutpop'>ABOUT</p> <br>
+      <p class='menu aboutpop'><a href='#'>CONTEXT</p></a><br>
       <p class='menu'><a href='#merchanise'>MERCHANDISE</a></p>
     </div>
     <div class='tabelcontainer'>
@@ -51,6 +48,8 @@
     </div>
 </div>
 
+
+
 <!-- <div class='headline'>
 
 </div> -->
@@ -58,7 +57,7 @@
 <div class='content'>
 
 <div class="headlinecol1">
-  <img src="img/Socks1.jpg">
+  <img src="img/Sfeer2.jpg">
 </div>
 <div class="headlinecol2">
   <div class="column">
@@ -68,13 +67,16 @@
   </div>
 </div>
 
-<div class="col1"><div style="height:100%;">
 
+<div class="col1"><div style="height:100%;">
   <div class='column'>
+
+      <p class='menu' style='font-size:36px;'>BULLETIN<img style='width:20%; margin-left: -10%;  z-index:1; display:inline-block;' src="img/pen_01.png"> </p>
       <br>
   <div class="filtered">
     <img src="img/test.jpg">
   </div>
+
       <div> <p class='date'> <span class='highlight'> Introduction </span> </p>  </div>
       <div> <p class='update'> This website is put together in the spirit of THE pirate bible: <a href='rimb.html'> Radio is my bomb</a>  This website, made in April 2020, its still a bit rough but I hope to update it regularily.
 Its intended as a 'Do-It -Yourself' Pirate's Handbook, aimed at promoting neighbourhood, political and openaccess radio pirates. This version is updated with modern technologies and made to preserve the pirate radio ideas.
@@ -97,12 +99,10 @@ Its intended as a 'Do-It -Yourself' Pirate's Handbook, aimed at promoting neighb
       <br>
 
       <div> <p class='date'> <span class='highlight'> update XX X 2020 </span> </p>  </div>
-    <div> <p class='update'> LaB Got some DIY Merchanise. You don't have to pay us money. Just get your hands dirty and make your own Tie-Dye socks! See the manuel at he guid section!</p>  </div>
+    <div> <p class='update'> LAB Got some DIY Merchandise. You don't have to pay us money. Just get your hands dirty and make your own Tie-Dye socks! See the manuel at he guid section!</p>  </div>
     <br>
 
-      <div class="filtered">
-        <img src="img/3.jpg">
-      </div>
+
 
 
     </div>
@@ -113,11 +113,11 @@ Its intended as a 'Do-It -Yourself' Pirate's Handbook, aimed at promoting neighb
 
 
     <div class="col2"><div style="height:100%;">
-      <!-- <div class=menucol2>
-        <p class='menu'> GUIDE </p> <p class='menu menuabout'> ABOUT </p>
-      </div> -->
+
 <div class='column'>
-    <div> <p class='date'> <span id="mediaserver" class='highlight2'>DIY Web Server with apache</span></p>  </div>
+    <p id="mediaserver" class='menu' style='font-size:36px;'>MANUAL<img style='width:20%; margin-left: -10%;  z-index:1; display:inline-block;' src="img/pen_02.png"></p>
+
+    <div> <p class='date'> <span  class='highlight2'>DIY Web Server with apache</span></p>  </div>
     <div> <p class='update'> Materials: Raspberry Pi + SD Card, Internet Cabel, Keyboard, Cyberduck  </p>  </div>
     <div class="filtered">
       <img src="img/serveronline_03.jpg">
@@ -139,7 +139,7 @@ ls -al
 <div class="filtered">
   <img src="img/serveronline_05.png">
 </div>
-<p class='update'>
+<p id="fmradio" class='update'>
 This shows that by default there is one file in /var/www/html/ called index.htmland it is owned by the root user (as is the enclosing folder). In order to edit the file, you need to change its ownership to your own username. Change the owner of the file (the default pi user is assumed here) using sudo chown pi: index.html.
 
 You can now try editing this file and then refreshing the browser to see the web page change.
@@ -155,7 +155,7 @@ Make sure there is a File called SSH on your SD card to acces your server with c
 <h3 style='margin:5%'>"At least you're on the radio-oh" Line from Social Cues, a track by Cage the Elephant </h3>
 <br>
 
-  <div> <p class='date'> <span id="fmradio" class='highlight2'>FM Radio with Raspberry Pi</span></p>  </div>
+  <div> <p class='date'> <span  class='highlight2'>FM Radio with Raspberry Pi</span></p>  </div>
   <p class='update'>
   Materials: Raspberry Pi + SD Card, Wire
 Use the tiny computer to create and broadcast the signal, and attach an antenna to give it the broadcast range.
@@ -165,7 +165,7 @@ Use the tiny computer to create and broadcast the signal, and attach an antenna 
   <img src="img/howtomake.png">
 </div>
 </p>
-  <p class='update'>
+  <p id='merchanise' class='update'>
 1. Set up your Raspberry Pi
 You’ll need to get Raspbian, the Linux-based operating system for the
 <br>
@@ -186,14 +186,16 @@ Plug a strip of wire into the GPIO4 pin on your Raspberry Pi (the fourth pin dow
 Run the PiFM code. You’ll do that by running a command like “sudo ./pifm awesomejams.wav 100.0”, where that “100.0” is the frequency in MHz on which you’re broadcasting.
 <br>
 <br>
-<div> <p class='date'> <span class='highlight2'>LAB Tie-dye socks</span></p>  </div>
+<br>
+<div> <p  class='date'> <span class='highlight2'>LAB Tie-dye socks</span></p>  </div>
 <p class='update'>
 Materials: White (sport)sock, Purple textile paint, Water, Salt, Platic bag, Rubber glooves, Elastic
 <br>
-<br>
 
 </p>
-<p id='merchanise'class='update'>
+
+<br>
+<p class='update'>
 1. Dissolve the fabric paint in warm water according to the instructions on the package.
 Although the instructions depend on the brand and the chemicals that are in the paint (In this tutorial we use Dylon), as a general guideline you can keep mixing 2 teaspoons of paint with 1 tablespoon of salt and 250 ml of warm to hot water. Mix it well to make a concentrated dye bath
 <br>
@@ -228,7 +230,7 @@ Ring patterns, made by slipping buttons or pennies into the socks. Tie these off
 <br>
 </p>
 <div class="filtered">
-  <img src="img/Socks1.jpg">
+  <img src="img/Sfeer2.jpg">
 </div>
 
 <br>
@@ -243,7 +245,9 @@ Extra: You could use an mixure of lukwarm water, vinegar and salt to lock the co
 <br>
 Wash your socks separately a few times before throwing them in with other other clothes to prevent the dye from running.
 </p>
-
+<br>
+<br><br>
+<br>
 </div>
 
 </div>

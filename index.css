@@ -229,6 +229,7 @@ body,html, .col1, .col2  {
     border-width: 1px 1px 1px 1px;
     border-color: rgb(96, 29, 143);
     z-index: 105;
+    overflow: auto;
   }
 
 }
