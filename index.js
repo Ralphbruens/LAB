@@ -560,7 +560,7 @@ var iconImage = 'img/test.jpg';
 
 AP.init({
   playList: [
-    {'icon': iconImage, 'title': 'Last 15 Minutes of Radio Nordsee', 'file': 'audio/RN31081974.mp3'},
-    {'icon': iconImage, 'title': 'Alexandra Savior - The Archer', 'file': 'audio/ASTA.mp3'}
+    {'icon': iconImage, 'title': 'Audio From the Archive: Radio Nordsee', 'file': 'audio/RN31081974.mp3'},
+    {'icon': iconImage, 'title': 'Audio From the IISG: Vrije Keyser Radio ', 'file': 'audio/gc10-515a.mp3'}
   ]
 });
